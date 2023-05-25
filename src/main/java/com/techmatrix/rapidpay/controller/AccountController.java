@@ -19,7 +19,7 @@ public class AccountController {
         return accountService.getAllAccount();
     }
     @GetMapping("/{id}/")
-    public  Account getAccountById(@PathParam("id") Integer accountId) {
+    public  Account getAccountById(@PathVariable("id") Integer accountId) {
         return accountService.getAccountById(accountId);
     }
     @PostMapping

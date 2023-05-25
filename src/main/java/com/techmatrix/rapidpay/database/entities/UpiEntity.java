@@ -6,7 +6,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 @Entity
-@Table
+@Table(name = "upi")
 @Getter
 @Setter
 @RequiredArgsConstructor
@@ -20,7 +20,7 @@ public class UpiEntity {
     @Column(name = "account_number")
     private Long accountNumber;
     @Column(name = "upi_secret")
-    private Integer upiSecret;
+    private String upiSecret;
     @Column(name = "upi_status")
     private String upiStatus;
 }

@@ -20,4 +20,6 @@ public class AccountEntity {
     private String accountHolder;
     @Column(name = "mobile_number")
     private Long mobileNumber;
+    @Column(name = "amount")
+    private Long amount;
 }
